@@ -1,118 +1,83 @@
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
 import Link from "next/link";
 
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="container py-24 sm:py-32">
-      <div className="p-10 bg-card border border-secondary rounded-2xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
-          <div className="col-span-full xl:col-span-2">
-            <Link href="#" className="flex font-bold items-center">
-              <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
+    <footer id="footer" className="container py-16">
+      <div className="rounded-2xl border border-secondary bg-card p-10">
+        <div className="grid gap-10 md:grid-cols-3">
+          <div>
+            <h3 className="text-2xl font-bold">naklikane industries</h3>
 
-              <h3 className="text-2xl">Shadcn</h3>
-            </Link>
+            <p className="mt-3 max-w-sm leading-7 text-muted-foreground">
+              Performance marketing oparty na danych. Google Ads, Meta Ads,
+              LinkedIn Ads oraz analityka internetowa.
+            </p>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Contact</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
-              </Link>
-            </div>
+          <div>
+            <h4 className="mb-4 font-semibold">Kontakt</h4>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitter
+            <div className="flex flex-col gap-3">
+              <Link
+                href="mailto:kontakt@naklikane.com"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                kontakt@naklikane.com
               </Link>
-            </div>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                iOS
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Android
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Web
+              <Link
+                href="https://www.linkedin.com/in/patryk-zakowicz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                LinkedIn
               </Link>
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Help</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
-              </Link>
-            </div>
+          <div>
+            <h4 className="mb-4 font-semibold">Informacje</h4>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                FAQ
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
-              </Link>
+            <div className="space-y-2 text-muted-foreground">
+              <p>Patryk Żakowicz NAKLIKANE Industries</p>
+              <p>NIP: 895 230 59 23</p>
+              <p>REGON: 545134477</p>
             </div>
           </div>
         </div>
 
-        <Separator className="my-6" />
-        <section className="">
-          <h3 className="">
-            &copy; 2024 Designed and developed by
+        <Separator className="my-8" />
+
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <span className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} naklikane industries. Wszelkie prawa zastrzeżone.
+          </span>
+
+          <div className="flex flex-wrap gap-6 text-sm">
             <Link
-              target="_blank"
-              href="https://github.com/leoMirandaa"
-              className="text-primary transition-all border-primary hover:border-b-2 ml-1"
+              href="/polityka-prywatnosci"
+              className="text-muted-foreground transition-colors hover:text-primary"
             >
-              Leo Miranda
+              Polityka prywatności
             </Link>
-          </h3>
-        </section>
+
+            <Link
+              href="/polityka-cookies"
+              className="text-muted-foreground transition-colors hover:text-primary"
+            >
+              Polityka cookies
+            </Link>
+
+            <button
+              type="button"
+              className="text-muted-foreground transition-colors hover:text-primary"
+            >
+              Zarządzaj zgodami
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
   );

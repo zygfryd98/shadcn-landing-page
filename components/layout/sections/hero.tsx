@@ -1,75 +1,113 @@
 "use client";
-import { Badge } from "@/components/ui/badge";
+
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { useTheme } from "next-themes";
-import Image from "next/image";
+import { ArrowRight, BadgeCheck } from "lucide-react";
 import Link from "next/link";
 
 export const HeroSection = () => {
-  const { theme } = useTheme();
   return (
     <section className="container w-full">
-      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
+      <div className="grid place-items-center lg:max-w-screen-xl gap-10 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
-          <Badge variant="outline" className="text-sm py-2">
-            <span className="mr-2 text-primary">
-              <Badge>New</Badge>
-            </span>
-            <span> Design is out now! </span>
-          </Badge>
+          <p className="fade-up fade-delay-1 text-sm md:text-base text-primary font-medium tracking-widest">
+            naklikane industries
+          </p>
 
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
+          <div className="fade-up fade-delay-2 max-w-screen-lg mx-auto text-center text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <h1>
-              Experience the
-              <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                Shadcn
-              </span>
-              landing page
+              Kliknięcia kosztują.
+              <span className="block text-transparent bg-gradient-to-r from-[#000000] via-[#015002] to-[#015002] bg-clip-text dark:from-white dark:via-[#2EC84D] dark:to-[#015002]">
+  Złe decyzje kosztują więcej.
+</span>
             </h1>
           </div>
 
-          <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`We're more than just a tool, we're a community of passionate
-            creators. Get access to exclusive resources, tutorials, and support.`}
-          </p>
+          <div className="fade-up fade-delay-3 space-y-6">
+            <p className="max-w-screen-md mx-auto text-xl text-muted-foreground">
+              Platformy marketingowe to tylko narzędzia. Najważniejszy jest
+              sposób ich wykorzystania, a nie liczba uruchomionych kampanii.
+            </p>
 
-          <div className="space-y-4 md:space-y-0 md:space-x-4">
-            <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
-              Get Started
-              <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-            </Button>
+            <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm font-medium">
+              <div className="flex items-center gap-2">
+                <BadgeCheck className="h-4 w-4 text-[#015002]" />
+                <span>Bez pustych obietnic</span>
+              </div>
 
-            <Button
-              asChild
-              variant="secondary"
-              className="w-5/6 md:w-1/4 font-bold"
-            >
-              <Link
-                href="https://github.com/nobruf/shadcn-landing-page.git"
-                target="_blank"
-              >
-                Github respository
+              <div className="flex items-center gap-2">
+                <BadgeCheck className="h-4 w-4 text-[#015002]" />
+                <span>Decyzje oparte na danych</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <BadgeCheck className="h-4 w-4 text-[#015002]" />
+                <span>Budżet wydawany z głową</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="fade-up fade-delay-4 flex flex-col md:flex-row justify-center items-center gap-6">
+            <Button asChild size="lg" className="font-bold group/arrow">
+              <Link href="#contact">
+                Skontaktuj się
+                <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </Link>
             </Button>
+
+            <Link
+              href="#about"
+              className="font-semibold text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              Poznaj moje podejście
+              <ArrowRight className="inline-block size-4 ml-2 transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
         </div>
 
-        <div className="relative group mt-14">
-          <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
-          <Image
-            width={1200}
-            height={1200}
-            className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
-            src={
-              theme === "light"
-                ? "/hero-image-light.jpeg"
-                : "/hero-image-dark.jpeg"
-            }
-            alt="dashboard"
-          />
+        <div className="fade-up fade-delay-4 w-full max-w-5xl mt-12">
+          <p className="mb-8 text-xs uppercase tracking-[0.3em] text-muted-foreground text-center">
+            Platformy i narzędzia
+          </p>
 
-          <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm md:text-base text-muted-foreground">
+            <span className="transition-colors hover:text-foreground cursor-default">
+              Google Ads
+            </span>
+
+            <span className="transition-colors hover:text-foreground cursor-default">
+              Meta Ads
+            </span>
+
+            <span className="transition-colors hover:text-foreground cursor-default">
+              LinkedIn Ads
+            </span>
+
+            <span className="transition-colors hover:text-foreground cursor-default">
+              Microsoft Ads
+            </span>
+
+            <span className="transition-colors hover:text-foreground cursor-default">
+              Pinterest Ads
+            </span>
+
+            <span className="transition-colors hover:text-foreground cursor-default">
+              TikTok Ads
+            </span>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-6 text-sm md:text-base text-muted-foreground">
+            <span className="transition-colors hover:text-foreground cursor-default">
+              Google Analytics 4
+            </span>
+
+            <span className="transition-colors hover:text-foreground cursor-default">
+              Google Tag Manager
+            </span>
+
+            <span className="transition-colors hover:text-foreground cursor-default">
+              Looker Studio
+            </span>
+          </div>
         </div>
       </div>
     </section>
