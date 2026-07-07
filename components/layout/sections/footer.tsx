@@ -1,3 +1,12 @@
+"use client";
+declare global {
+  interface Window {
+    Cookiebot?: {
+      renew: () => void;
+    };
+  }
+}
+
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
@@ -71,11 +80,16 @@ export const FooterSection = () => {
             </Link>
 
             <button
-              type="button"
-              className="text-muted-foreground transition-colors hover:text-primary"
-            >
-              Zarządzaj zgodami
-            </button>
+            type="button"
+            onClick={() => {
+              if (typeof window !== "undefined" && window.Cookiebot) {
+                window.Cookiebot.renew();
+              }
+            }}
+            className="text-muted-foreground transition-colors hover:text-primary"
+          >
+            Zarządzaj zgodami
+          </button> 
           </div>
         </div>
       </div>

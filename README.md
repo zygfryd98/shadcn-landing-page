@@ -1,8 +1,8 @@
 # Shadcn Landing Page Template
 
-## <a href="https://ui.shadcn.com/" target="_blank">Shadcn</a> + <a href="https://nextjs.org/" target="_blank">Next.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
+## <a href="https://ui.shadcn.com/"  rel="noopener noreferrer">Shadcn</a> + <a href="https://nextjs.org/" target="_blank">Next.js</a> + <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwind</a>.
 
-### This is a project conversion <a href="https://github.com/leoMirandaa/shadcn-vue-landing-page" target="_blank">Shadcn-Vue</a> to NextJS
+### This is a project conversion <a href="https://github.com/leoMirandaa/shadcn-vue-landing-page" target="_blank" rel="noopener noreferrer">Shadcn-Vue</a> to NextJS
 
 ![Alt text](./public/demo-img.jpg)
 

@@ -34,6 +34,7 @@ export const ContactSection = () => {
             <Link
               href="https://www.linkedin.com/in/patryk-zakowicz/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn
