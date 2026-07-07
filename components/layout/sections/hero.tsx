@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BadgeCheck } from "lucide-react";
 import Link from "next/link";
-import { HeroDashboard } from "./hero-dashboard";
 
 export const HeroSection = () => {
   return (
