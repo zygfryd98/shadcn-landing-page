@@ -31,6 +31,10 @@ const routeList: RouteProps[] = [
     label: "Obsługiwane systemy",
   },
   {
+    href: "#experience",
+    label: "Doświadczenie",
+  },
+  {
     href: "#about",
     label: "O mnie",
   },

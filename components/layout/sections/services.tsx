@@ -97,7 +97,10 @@ const systemList: SystemProps[] = [
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="container py-24 sm:py-32">
+    <section
+  id="services"
+  className="container pt-12 pb-20 sm:pt-16 sm:pb-24"
+>
       <div className="max-w-4xl mx-auto text-center mb-16">
         <p className="text-sm md:text-base text-primary font-medium tracking-[0.25em] uppercase mb-4">
           Platformy i analityka

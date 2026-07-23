@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export const ContactSection = () => {
   return (
-    <section id="contact" className="container py-24 sm:py-32">
+    <section
+  id="contact"
+  className="container pt-12 pb-16 sm:pt-16 sm:pb-20"
+>
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-sm md:text-base text-primary font-medium tracking-[0.25em] uppercase mb-4">
           Kontakt

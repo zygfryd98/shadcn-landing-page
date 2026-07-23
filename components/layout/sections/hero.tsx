@@ -7,7 +7,7 @@ import Link from "next/link";
 export const HeroSection = () => {
   return (
     <section className="container w-full">
-      <div className="grid place-items-center lg:max-w-screen-xl gap-10 mx-auto py-20 md:py-32">
+      <div className="grid place-items-center lg:max-w-screen-xl gap-10 mx-auto pt-20 pb-8 md:pt-28 md:pb-10">
         <div className="text-center space-y-8">
           <p className="fade-up fade-delay-1 text-sm md:text-base text-primary font-medium tracking-widest">
             naklikane industries
@@ -17,8 +17,8 @@ export const HeroSection = () => {
             <h1>
               Kliknięcia kosztują.
               <span className="block text-transparent bg-gradient-to-r from-[#000000] via-[#015002] to-[#015002] bg-clip-text dark:from-white dark:via-[#2EC84D] dark:to-[#015002]">
-  Złe decyzje kosztują więcej.
-</span>
+                Złe decyzje kosztują więcej.
+              </span>
             </h1>
           </div>
 
@@ -61,52 +61,6 @@ export const HeroSection = () => {
               Poznaj moje podejście
               <ArrowRight className="inline-block size-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Link>
-          </div>
-        </div>
-
-        <div className="fade-up fade-delay-4 w-full max-w-5xl mt-12">
-          <p className="mb-8 text-xs uppercase tracking-[0.3em] text-muted-foreground text-center">
-            Platformy i narzędzia
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm md:text-base text-muted-foreground">
-            <span className="transition-colors hover:text-foreground cursor-default">
-              Google Ads
-            </span>
-
-            <span className="transition-colors hover:text-foreground cursor-default">
-              Meta Ads
-            </span>
-
-            <span className="transition-colors hover:text-foreground cursor-default">
-              LinkedIn Ads
-            </span>
-
-            <span className="transition-colors hover:text-foreground cursor-default">
-              Microsoft Ads
-            </span>
-
-            <span className="transition-colors hover:text-foreground cursor-default">
-              Pinterest Ads
-            </span>
-
-            <span className="transition-colors hover:text-foreground cursor-default">
-              TikTok Ads
-            </span>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-6 text-sm md:text-base text-muted-foreground">
-            <span className="transition-colors hover:text-foreground cursor-default">
-              Google Analytics 4
-            </span>
-
-            <span className="transition-colors hover:text-foreground cursor-default">
-              Google Tag Manager
-            </span>
-
-            <span className="transition-colors hover:text-foreground cursor-default">
-              Looker Studio
-            </span>
           </div>
         </div>
       </div>
